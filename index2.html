@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roger Yamassaki</title>
+
+  <!-- Fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Ícones (biblioteca Lucide) -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link rel="shortcut icon" href="FaviconLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="cabecalho">
+    <div class="container">
+      <a href="#inicio" class="logo">
+        Roger Yamassaki <span class="logo-bolinha"></span>
+      </a>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="cabecalho-direita">
+        <a href="#contato" class="botao">Vamos conversar</a>
+        <button class="botao-menu" id="botao-menu" type="button" aria-label="Abrir menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== INÍCIO ========== -->
+    <section id="inicio" class="secao">
+      <div class="container inicio-grade">
+
+        <div class="aparecer">
+          <span class="etiqueta">Designer &amp; Desenvolvedor</span>
+          <h1 class="titulo-grande">Desenvolvo aplicações web e APIs REST com foco em soluções simples, funcionais e escaláveis.</h1>
+          <p class="inicio-texto">Desenvolvedor Java/Spring/Angular.</p>
+
+          <div class="inicio-botoes">
+            <a href="#projetos" class="botao">Ver projetos</a>
+            <a href="#contato" class="botao-vazado">Entrar em contato</a>
+          </div>
+
+          <a href="#sobre" class="rolar">
+            <span class="rolar-circulo"><i data-lucide="arrow-down" width="16" height="16"></i></span>
+            Role para descobrir
+          </a>
+        </div>
+
+        <div class="inicio-foto aparecer">
+          <div class="enfeite-quadrado"></div>
+          <div class="enfeite-bola"></div>
+          <div class="caixa-imagem">
+            <img src="fotos/yaomuyu.jpg" alt="Retrato profissional de uma montanha">
+          </div>
+          <div class="inicio-legenda">Estratégia, design e código em sintonia.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="secao sobre">
+      <div class="container sobre-grade">
+
+        <div class="aparecer">
+          <div class="caixa-imagem sobre-foto">
+            <img src="fotos/boskampi.png" alt="Codigos">
+          </div>
+        </div>
+
+        <div class="sobre-texto aparecer">
+          <span class="etiqueta">Sobre mim</span>
+          <h2 class="titulo-secao">Criatividade com intenção e tecnologia com propósito.</h2>
+          <p class="sobre-paragrafo">Sou desenvolvedor com foco no ecossistema Java, trabalhando principalmente com Spring Boot e desenvolvimento de APIs REST.</p>
+          <p class="sobre-paragrafo">Também estudo desenvolvimento frontend com Angular e tecnologias relacionadas a aplicações web. Atualmente desenvolvo projetos próprios para aprimorar minhas habilidades e criar soluções que possam ser utilizadas por usuários reais.</p>
+
+          <div class="numeros">
+            <div>
+              <p class="numero-valor">02+</p>
+              <p class="numero-nome">Anos de experiência</p>
+            </div>
+            <div>
+              <p class="numero-valor">4</p>
+              <p class="numero-nome">Projetos concluídos</p>
+            </div>
+            <div>
+              <p class="numero-valor">0</p>
+              <p class="numero-nome">Clientes atendidos</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== TECNOLOGIAS ========== -->
+    <section class="secao tecnologias">
+      <div class="container">
+
+        <div class="tecnologias-topo aparecer">
+          <div>
+            <span class="etiqueta">Ferramentas e repertório</span>
+            <h2 class="titulo-secao">Tecnologias que uso.</h2>
+          </div>
+          <p class="tecnologias-texto">Uma combinação de ferramentas para pensar, desenhar e construir experiências digitais robustas, expressivas e fáceis de manter.</p>
+        </div>
+
+        <div class="tecnologias-grade">
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">J</span> Java</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">SB</span> Spring Boot</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">JS</span> JavaScript</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">TS</span> Typescript</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">P</span> Python</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">G</span> Git</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">H</span> Html</div>
+          <div class="tecnologia aparecer"><span class="tecnologia-letra">C</span> CSS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="secao">
+      <div class="container">
+
+        <div class="projetos-topo aparecer">
+          <div>
+            <span class="etiqueta">Projetos selecionados</span>
+            <h2 class="titulo-secao">Trabalhos que ganharam forma.</h2>
+          </div>
+
+          <!-- data-filtro diz qual categoria o botão mostra -->
+          <div class="filtros">
+            <button class="filtro ativo" type="button" data-filtro="todos">Todos</button>
+            <button class="filtro" type="button" data-filtro="web">Web</button>
+            <button class="filtro" type="button" data-filtro="branding">Branding</button>
+            <button class="filtro" type="button" data-filtro="uiux">UI/UX</button>
+          </div>
+        </div>
+
+        <div class="projetos-grade">
+
+          <!-- data-categoria é usado pelo filtro -->
+          <article class="projeto aparecer" data-categoria="web">
+            <div class="caixa-imagem">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Caderno com esboços de wireframe">
+            </div>
+            <div class="projeto-info">
+              <p class="projeto-categoria">Web</p>
+              <h3 class="titulo-card">Finplus - Controle Financeiro</h3>
+              <p class="projeto-descricao">O FinPlus tem como objetivo auxiliar no controle financeiro pessoal, permitindo o gerenciamento de receitas, despesas e organização financeira de forma simples e intuitiva.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Java</span>
+                <span class="tag">Spring</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <!--Link do projeto-->
+              <a href="https://github.com/Skarefes/finplus-oficial" target="_blank" class="projeto-link">Ver projeto ↗</a>
+            </div>
+          </article>
+
+          <article class="projeto aparecer" data-categoria="web">
+            <div class="caixa-imagem">
+              <img src="https://images.pexels.com/photos/4466420/pexels-photo-4466420.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cartões de visita pretos">
+            </div>
+            <div class="projeto-info">
+              <p class="projeto-categoria">Web</p>
+              <h3 class="titulo-card">Caluno</h3>
+              <p class="projeto-descricao">A proposta do projeto é facilitar o acompanhamento nutricional de forma simples, permitindo que o usuário registre alimentos e suas respectivas quantidades e obtenha automaticamente informações nutricionais proporcionais ao consumo.</p>
+              <div class="tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Java</span>
+                <span class="tag">Spring</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <a href="https://github.com/Skarefes/Caluno" target="_blank" class="projeto-link">Ver projeto ↗</a>
+            </div>
+          </article>
+
+          <article class="projeto aparecer" data-categoria="web">
+            <div class="caixa-imagem">
+              <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tela de smartphone com aplicativos">
+            </div>
+            <div class="projeto-info">
+              <p class="projeto-categoria">web</p>
+              <h3 class="titulo-card">Pesquisa CEP</h3>
+              <p class="projeto-descricao">Este projeto consiste em um sistema que utiliza a API ViaCEP para buscar informações de endereços a partir de um CEP.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Java</span>
+              </div>
+              <a href="https://github.com/Skarefes/Pesquise_Cep" target="_blank" class="projeto-link">Ver projeto ↗</a>
+            </div>
+          </article>
+
+          <article class="projeto aparecer" data-categoria="web">
+            <div class="caixa-imagem">
+              <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laptop com gráficos ao lado de um tablet">
+            </div>
+            <div class="projeto-info">
+              <p class="projeto-categoria">Web</p>
+              <h3 class="titulo-card">Encrtador de URL</h3>
+              <p class="projeto-descricao">Este projeto é uma aplicação Java com Spring Boot que permite encurtar URLs longas, gerando links curtos e únicos com base no ID da URL armazenado no banco de dados. Ele utiliza codificação Base62 para transformar o ID numérico em um identificador curto e reutilizável.</p>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring</span>
+              </div>
+              <a href="https://github.com/Skarefes/encurtador-url" target="_blank" class="projeto-link">Ver projeto ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section id="servicos" class="secao">
+      <div class="container">
+
+        <div class="aparecer">
+          <span class="etiqueta">Como posso ajudar</span>
+          <h2 class="titulo-secao">Do conceito à tela, com consistência.</h2>
+        </div>
+
+        <div class="servicos-grade">
+          <article class="servico aparecer">
+            <i data-lucide="code-2"></i>
+            <h3 class="titulo-card">Desenvolvimento web</h3>
+            <p>Sites responsivos, rápidos e personalizados para traduzir sua marca em uma presença digital marcante.</p>
+          </article>
+
+          <article class="servico aparecer">
+            <i data-lucide="panels-top-left"></i>
+            <h3 class="titulo-card">Design de interfaces</h3>
+            <p>Interfaces intuitivas e sistemas visuais que tornam cada jornada mais simples, humana e memorável.</p>
+          </article>
+
+          <article class="servico aparecer">
+            <i data-lucide="pen-tool"></i>
+            <h3 class="titulo-card">Identidade visual</h3>
+            <p>Direções visuais que revelam a personalidade da sua marca e criam reconhecimento em cada ponto de contato.</p>
+          </article>
+
+          <article class="servico aparecer">
+            <i data-lucide="messages-square"></i>
+            <h3 class="titulo-card">Consultoria</h3>
+            <p>Clareza para decidir prioridades, organizar ideias e encontrar caminhos digitais que fazem sentido para o negócio.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CHAMADA (faixa coral) ========== -->
+    <section class="chamada-area">
+      <div class="container chamada aparecer">
+        <span class="chamada-etiqueta">Seu próximo projeto</span>
+        <h2 class="titulo-secao">Tem uma ideia que merece sair do papel?</h2>
+        <a href="#contato" class="chamada-botao">Vamos construir juntos</a>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="secao">
+      <div class="container contato-grade">
+
+        <div class="aparecer">
+          <span class="etiqueta">Contato</span>
+          <h2 class="titulo-secao">Vamos criar algo que faça sentido.</h2>
+          <p class="contato-texto">Conte um pouco sobre o seu desafio, momento ou ideia. Vou adorar conhecer o que você está construindo.</p>
+
+          <div class="contato-dados">
+            <a href="mailto:ola@seunome.com" class="contato-email">roger.devyama@gmail.com</a>
+            <p class="contato-local">
+              <i data-lucide="map-pin"></i>
+              São Paulo, Brasil · Disponível para projetos remotos
+            </p>
+          </div>
+
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/roger-yamassaki-00a8611a4/" target="_blank" class="rede" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/Skarefes" target="_blank" class="rede" aria-label="GitHub"><i data-lucide="github"></i></a>
+          </div>
+        </div>
+
+        <div class="formulario aparecer">
+          <form id="formulario" novalidate>
+            <div class="formulario-linha">
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text">
+                <p class="erro" id="erro-nome"></p>
+              </div>
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" type="email">
+                <p class="erro" id="erro-email"></p>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="servico">Serviço de interesse</label>
+              <select id="servico">
+                <option value="">Selecione uma opção</option>
+                <option>Desenvolvimento web</option>
+                <option>Design de interfaces</option>
+                <option>Identidade visual</option>
+                <option>Consultoria</option>
+              </select>
+              <p class="erro" id="erro-servico"></p>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" rows="5"></textarea>
+              <p class="erro" id="erro-mensagem"></p>
+            </div>
+
+            <button class="botao" type="submit">Enviar mensagem</button>
+            <p class="mensagem-sucesso" id="sucesso"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>© 2026 Seu Nome. Feito com intenção.</p>
+      <div class="rodape-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="js.js">
+  </script>
+
+</body>
+</html>
